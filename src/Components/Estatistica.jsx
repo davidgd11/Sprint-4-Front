@@ -92,7 +92,6 @@ function buscarCep(e){
 
       <div id='button-estats'>
         <button type="reset">Limpar</button>
-        <button type="submit">CADASTRAR</button>
       </div>
 
       </div>
