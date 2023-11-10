@@ -1,0 +1,198 @@
+$padrao-background: #fff;
+$background-cinza: #979797;
+
+$background-lightcinza: rgba(116, 116, 116, 0.6);
+$shadow-cinza: rgb(116, 116, 116, 0.8);
+
+$padrao-color: #000;
+$blue-color: #20607e;
+$lightblue-color: #a8dbf0;
+$purple-color: #423650;
+
+$hover-purple: rgba(66, 54, 80, 0.715);
+
+$back-input: #ffffff;
+
+$placeholder-color: #3a3a3a;
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: $padrao-background;
+}
+
+
+/*NAV*/ /*
+header{
+    @include flexCenter();
+}
+
+#logo h1{
+    color: $background-cinza;
+}
+
+#navegador{
+    @include flexCenter();
+}
+
+#navegador ul li a{
+    color: $background-cinza;
+}
+#intro h3{
+    font-size: 24px;
+    color: #423650;
+}
+#intro h2{
+    color: $padrao-color;
+}
+
+#intro button{
+    background-color: $padrao-background;
+    color: $blue-color;
+}
+.img4,
+.img5{ 
+    box-shadow: 1px 1px 10px $padrao-color;
+}
+
+ */
+/*PARTE COMO FUNCIONA*/
+
+#como-funciona{
+    @include flexCenter();
+}
+
+#conteudo,
+#paragrafo-func{
+    @include flexCenter();
+    flex-direction: column;
+    background-color: $background-cinza;
+}
+
+#como-funciona h2{
+    color: $lightblue-color;
+}
+#como-funciona h3{
+    color: $padrao-background;
+}
+
+#como-funciona img{
+    box-shadow: 2px 2px 10px $padrao-color;
+}
+
+#como-funciona p{
+    color: $padrao-background;
+}
+
+
+
+/*PARTE APOIADORES*/
+#apoiadores{
+    @include flexCenter();
+    text-align: center;
+   /* background:linear-gradient(to top, #a8dbf0 90%, #423650 );*/ 
+}
+
+#apoiadores p{
+    color: $padrao-background;
+    background-color: $background-cinza;
+}
+
+#apoiadores h2{
+    color: $purple-color;
+}
+#apoiadores h3{
+    color: $background-cinza;
+}
+
+#apoiadores img{
+    box-shadow: 1px 1px 10px $padrao-color;
+}
+
+
+
+/*PARTE ONDE ACHAR*/
+
+#onde-achar{
+    @include flexCenter();
+
+    background-color: $purple-color;
+
+    border-top: 2px solid $padrao-background;
+    border-bottom: 2px solid $padrao-background;
+    box-shadow: 2px 2px 10px $padrao-color;
+}
+#onde-achar h2{
+    color: $lightblue-color;
+}
+#onde-achar h3{
+    color: $padrao-background;
+}
+
+#onde-achar img{
+    box-shadow: 2px 2px 10px $padrao-color;
+}
+
+#onde-achar p{
+    color: $padrao-background;
+}
+
+
+
+
+/*PARTE CONTATOS*/
+#conteudo-contato{
+    @include flexCenter();
+    flex-direction: column;
+}
+#all,
+#estatistica{
+    @include flexCenter();
+    flex-direction: column;
+    box-shadow: 6px 6px 10px $shadow-cinza;
+}
+
+#contato h1{
+    @include flexCenter();
+}
+
+#contato input{
+    background-color: transparent;
+}
+
+#contato form ::placeholder{
+    color: $placeholder-color;
+}
+#contato .textarea{
+    background-color: transparent;
+    /* resize: none; */
+}
+#inputs{
+    @include flexCenter();
+    flex-direction: column;
+}
+
+#contato button{
+    @include flexCenter();
+}
+#contato button #submit{
+    background-color: $purple-color;
+    color: $padrao-background;
+}
+
+/*FOOTER*/
+footer{
+    @include flexCenter();
+    background-color: $background-lightcinza;
+}
+
+footer a button{
+    background-color: $purple-color;
+}
+footer a button:hover{
+    box-shadow: 1px 1px 15px $purple-color;
+}
